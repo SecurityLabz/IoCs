@@ -1,0 +1,10 @@
+Strategies to filter out noise, such as scanners and bots, vs malicious traffic or attacker infrastructure
+
+1. low volume IP addresses
+2. known ports used to manage bots
+3. analyze non-standard ports. possibly looking for ports not used in high-volume scans.
+4. analyze IPs from uri-paths not known as an ioc from campaign.
+5. determine hosting providers that host are known attacker infrastructure. tor exit nodes.
+6. analyze manual checks such as curl, python, or go user-agents.
+7. research ja3/ja4 and analyze TLS fingerprints.
+8. surface IPs detected in timed beaconing or check-in.
